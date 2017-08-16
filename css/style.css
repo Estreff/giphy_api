@@ -1,0 +1,30 @@
+body {
+	margin-top: 20px;
+}
+
+.btn-success {
+	margin: 5px;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+#gifsTitle {
+	font-size: 20px;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+.gifs {
+	margin: 5px;
+
+}
+
+/* #gifs1 {
+	width: 95%;
+}
+
+#gifs2 {
+	width: 95%;
+} */

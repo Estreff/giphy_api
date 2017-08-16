@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/cerulean/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+		<!-- Imput to create new topic in Giphy array -->
+			<div class="col-md-6">
+				<form class="input-group" id="buttonInput">						
+					<input type="text" class="form-control" id = "topicInput" placeholder="Search for Topic...">
+					<span class="input-group-btn">
+    					<button class="btn btn-warning" id="addTopic" type="button">Add!</button>
+  					</span>
+				</form>
+			<!-- Buttons to select to access Giphy API array-->
+				<div id="buttons">
+			<!-- Buttons will be added from the Topics Array -->
+				</div>
+			</div>
+
+	<!-- Display Gif files that are accessed from Giphy API (Show at least 10)  -->	
+			<div class="col-md-6" id="gifGroup">
+				<div class="alert alert-success" id="gifsTitle" role="alert"></div>
+					<div class="row">
+						<div class="col-md-6" id="gifs1"></div>
+						<div class="col-md-6" id="gifs2"></div>
+					</div>
+			</div>
+			
+		
+		</div>
+					
+		</div>			
+	</div>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="javascript/api.js"></script>
+</body>
+</html>
