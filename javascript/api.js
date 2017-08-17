@@ -10,6 +10,9 @@ var newSelection;
 			var createBtn = $('<button>').addClass("btn btn-success");
 			createBtn.text(createTopicBtn);
 			$('#buttons').append(createBtn);
+			$('.btn-success').click(function() {
+				topicButton(event);
+			});
 			console.log(createTopicBtn);
 		}
 	}
@@ -24,6 +27,9 @@ var newSelection;
 		var createBtn = $('<button>').addClass("btn btn-success");
 		createBtn.html(newSelection);
 		$('#buttons').append(createBtn);
+		$('.btn-success').click(function() {
+				topicButton(event);
+			});
 
 		$('#topicInput').val("");
 		
@@ -39,13 +45,12 @@ var newSelection;
 
 // Not Currently working
 
-/*	$('#topicInput').keypress(function(e) {
+	$('#topicInput').keypress(function(e) {
 		if(e.which == 13) {
-			
-			$('#addTopic').click()
+			newTopic()
 		}
 	});
-*/
+
 
 // Giphy Actors API Key Api Key: 65e85c3c72d046378ec61d27120944aa
 
@@ -56,7 +61,7 @@ var createIframe;
 
 
 // Topic Button selected and will reach out to Giphy API
-	$('.btn-success').click(function(event) {
+	function topicButton(event) {
 			$('#gifs1').html("");
 			$('#gifs2').html("");
 			setTimeout(3000);
@@ -81,5 +86,5 @@ var createIframe;
 					$('#gifs2').append(createIframe);
 				}
 			})				
-	});
+	};
 });
