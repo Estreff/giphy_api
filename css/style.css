@@ -1,13 +1,13 @@
 body {
 	margin-top: 20px;
+	background-color: lightgray;
+}
+
+.container {
 }
 
 .btn-success {
 	margin: 5px;
-}
-
-form {
-	margin-bottom: 20px;
 }
 
 #gifsTitle {
@@ -16,15 +16,15 @@ form {
 	visibility: hidden;
 }
 
-.gifs {
-	margin: 5px;
+.gifs img{
+	margin-bottom: 20px;
 
 }
 
-/* #gifs1 {
-	width: 95%;
+#buttonInput {
+	float:left;
 }
 
-#gifs2 {
-	width: 95%;
-} */
+#qtyInput {
+	float: right;
+}
