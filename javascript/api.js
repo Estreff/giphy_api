@@ -1,11 +1,11 @@
 $(function() {
 
 // Global Variables
-var topics = ['Val Kilmer', 'Kurt Russel', 'Tom Hanks', 'Kate Beckinsale', 'Tom Cruise', 'Cate Blanchett'];
-var newSelection;
-var gifNumber = 3;
-var gifNumberChanged;
-var gifMax = 25;
+	var topics = ['Val Kilmer', 'Kurt Russel', 'Tom Hanks', 'Kate Beckinsale', 'Tom Cruise', 'Cate Blanchett'];
+	var newSelection;
+	var gifNumber = 3;
+	var gifNumberChanged;
+	var gifMax = 25;
 
 
 // Function to use the topics Array to create Buttons
@@ -33,9 +33,9 @@ var gifMax = 25;
 
 
 
-var createGif;
-var topicName = "";
-var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=65e85c3c72d046378ec61d27120944aa&q=' + topicName +'&limit=' + gifNumber + '&offset=0&rating=PG&lang=en';
+	var createGif;
+	var topicName = "";
+	var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=65e85c3c72d046378ec61d27120944aa&q=' + topicName +'&limit=' + gifNumber + '&offset=0&rating=PG&lang=en';
 
 // Giphy Actors API Key Api Key: 65e85c3c72d046378ec61d27120944aa
 // Topic Button selected and will reach out to Giphy API
@@ -119,12 +119,13 @@ var updatedSelection = "";
 		
 		if($('#qtyNeeded').val() == "" || $('#qtyNeeded').val() === 0) {
 			alert('Enter Quantity');
-			$('#qtyNeeded').attr('value', gifNumber);
+			$('#qtyNeeded').val("");
 		} else if (gifNumberChanged <= gifMax) {
 			$('#qtyNeeded').attr('value', gifNumberChanged);	
 			gifNumber = gifNumberChanged;		
 		} else {
 			alert(`Please select a number less than or equal to ${gifMax}`);
+			$('#qtyNeeded').val("");
 		}
 	}
 
