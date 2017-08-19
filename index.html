@@ -10,16 +10,16 @@
 	<div class="container">
 		<div class="row">
 		<!-- Imput to create new topic in Giphy array -->
-			<div class="col-md-6" id="entryInfo">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12" id="entryInfo">
 				<div class="row">	
-					<div class="input-group col-md-8" id="buttonInput">		
+					<div class="input-group col-md-8 col-sm-12 " id="buttonInput">		
 						<input type="text" class="form-control" id = "topicInput" placeholder="Search for Topic...">
 						<span class="input-group-btn">
 	    					<button class="btn btn-warning" id="addTopic" type="button">Add Topic!</button>
 	  					</span>
 					</div>
-					<div class="input-group col-md-3" id="qtyInput">		
-						<input type="text" class="form-control" id = "qtyNeeded" placeholder="Quantity">
+					<div class="input-group col-md-3 col-sm-12" id="qtyInput">		
+						<input type="number" min="1" max="25" value="" class="form-control" id = "qtyNeeded">
 						<span class="input-group-btn">
 	    					<button class="btn btn-warning" id="addQty" type="button">Submit</button>
 	  					</span>
@@ -32,11 +32,11 @@
 			</div>
 
 				<!-- Display Gif files that are accessed from Giphy API (Show at least 10)  -->	
-			<div class="col-md-6" id="gifGroup">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12" id="gifGroup">
 				<div class="alert alert-success" id="gifsTitle" role="alert"></div>
 					<div class="row">
-						<div class="gifs col-md-6" id="gifs1"></div>
-						<div class="gifs col-md-6" id="gifs2"></div>
+						<div class="gifCatalog col-md-6" id="gifs1"></div>
+						<div class="gifCatalog col-md-6" id="gifs2"></div>
 					</div>
 			</div>		
 		</div>

@@ -1,9 +1,11 @@
 body {
 	margin-top: 20px;
 	background-color: lightgray;
+	margin: 20px;
 }
 
-.container {
+#entryInfo div{
+	margin-bottom: 10px;
 }
 
 .btn-success {
@@ -16,8 +18,8 @@ body {
 	visibility: hidden;
 }
 
-.gifs img{
-	margin-bottom: 20px;
+.gifCatalog img{
+	margin-bottom: 0px;
 
 }
 
@@ -28,3 +30,15 @@ body {
 #qtyInput {
 	float: right;
 }
+
+.caption {
+	background-color: #dff0d8;
+	color: #5f8847;
+	font-size:14px;
+	font-weight: bolder;
+
+	padding-bottom:10px;
+	padding: 0px;
+	text-align: center;
+}
+
