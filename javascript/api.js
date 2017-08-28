@@ -7,7 +7,6 @@ $(function() {
 	var gifNumberChanged;
 	var gifMax = 25;
 
-
 // Function to use the topics Array to create Buttons
 	function createButton() {
 		$('#buttons').html("")
@@ -22,17 +21,14 @@ $(function() {
 			console.log('Initial Button Created: ', createTopicBtn);
 		}
 
-
 		$('.btn-success').click(function() {
 				topicButton(event);
-			});
-		
+			});		
 	}
 // Call Create Buttons to push to the website
 	createButton();
 
-
-
+// More Global Variables
 	var createGif;
 	var topicName = "";
 	var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=65e85c3c72d046378ec61d27120944aa&q=' + topicName +'&limit=' + gifNumber + '&offset=0&rating=PG&lang=en';
@@ -107,10 +103,6 @@ var updatedSelection = "";
 					$('#topicInput').val("");
 				}
 			}
-	
-	// .split(" ").charAt[0].toUpperCase().join(" ")
-
-
 
 // Selecting the quantity of Gif files to return 
 
@@ -176,7 +168,7 @@ var updatedSelection = "";
 
 // When Enter is hit on Quantity Select, it submits qty for use with API query
 	$('#qtyNeeded').keypress(function(f) {
-		if(f.which == 13) {
+		if(f.which === 13) {
 			selectQty();
 			qtyReload();			
 		}
